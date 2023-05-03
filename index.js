@@ -11,7 +11,7 @@ const questions = [
   "usage:input:What is the use of your project?",
   "contribution:input:Who were the contributors to your project?",
   "tests:input:Please enter any tests",
-  "license:checkbox:What license did you use?:None:MIT:Mozilla Public License 2.0:IBM Public License Version 1.0",
+  "license:checkbox:What license did you use?:None:MIT:Mozilla Public License 2.0:Apache 2.0 License:Boost Software License 1.0",
   "username:input:Please enter GitHub Username",
   "email:input:Please enter your E-mail",
 ].map((element) => {

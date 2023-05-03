@@ -1,8 +1,23 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
+// Function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+  switch (license) {
+    case "MIT":
+      return `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`;
+    case "Mozilla Public License 2.0":
+      return `![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)`;
+    case "Apache 2.0 License":
+      return `![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)`;
+    case "Boost Software License 1.0":
+      return `![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)`;
+    case "None":
+      return "";
+    default:
+      return "";
+  }
+}
 
-// TODO: Create a function that returns the license link
+// Function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   switch (license) {
@@ -10,8 +25,10 @@ function renderLicenseLink(license) {
       return `https://opensource.org/license/mit/`;
     case "Mozilla Public License 2.0":
       return `https://opensource.org/license/mpl-2-0/`;
-    case "IBM Public License Version 1.0":
-      return `https://opensource.org/licenses/IPL-1.0`;
+    case "Apache 2.0 License":
+      return `https://opensource.org/license/apache-2-0/`;
+    case "Boost Software License 1.0":
+      return `https://www.boost.org/LICENSE_1_0.txt`;
     case "None":
       return "";
     default:
@@ -25,13 +42,20 @@ function renderLicenseSection(license) {
   switch (license) {
     case "MIT":
       return `## License 
-MIT`;
+
+The MIT License`;
     case "Mozilla Public License 2.0":
       return `## License
+
 Mozilla Public License 2.0`;
-    case "IBM Public License Version 1.0":
+    case "Apache 2.0 License":
       return `## License
-IBM Public License Version 1.0`;
+
+Apache 2.0 License`;
+    case "Apache 2.0 License":
+      return `## License
+
+Boost Software License 1.0`;
     case "None":
       return "";
     default:
@@ -52,27 +76,35 @@ function generateMarkdown({
   email,
 }) {
   return `# ${title} ${renderLicenseBadge(lic)}
-  
+
 ## Description
+
 ${description}
   
 ## Install Instructions
+
 ${install}
   
 ## Usage
+
 ${usage}
   
 ## Contributors
+
 ${contribution}
   
 ## Tests
+
 ${tests}
   
 ${renderLicenseSection(lic)}
+
 ${renderLicenseLink(lic)}
 
 ## Contact for Questions
+
 ${username}
+
 ${email}`;
 }
 
