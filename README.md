@@ -1,10 +1,20 @@
-# Test ![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)
+# Test ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Description
 
 Test
 
-## Install Instructions
+## Table of Contents
+
+1. [Description](#description)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [License](#license)
+5. [Contributing](#contributing)
+6. [Tests](#tests)
+7. [Questions](#questions)
+
+## Installation
 
 Test
 
@@ -12,7 +22,13 @@ Test
 
 Test
 
-## Contributors
+## License
+
+This application is covered under The MIT License
+
+https://opensource.org/license/mit/
+
+## Contributing
 
 Test
 
@@ -20,14 +36,8 @@ Test
 
 Test
 
-## License
+## Questions
 
-Mozilla Public License 2.0
+https://github.com/Test
 
-https://opensource.org/license/mpl-2-0/
-
-## Contact for Questions
-
-Test
-
-Test
+If you have any questions, please feel free to contact me at Test

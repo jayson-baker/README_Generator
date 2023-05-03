@@ -43,19 +43,19 @@ function renderLicenseSection(license) {
     case "MIT":
       return `## License 
 
-The MIT License`;
+This application is covered under The MIT License`;
     case "Mozilla Public License 2.0":
       return `## License
 
-Mozilla Public License 2.0`;
+This application is covered under Mozilla Public License 2.0`;
     case "Apache 2.0 License":
       return `## License
 
-Apache 2.0 License`;
+This application is covered under Apache 2.0 License`;
     case "Apache 2.0 License":
       return `## License
 
-Boost Software License 1.0`;
+This application is covered under Boost Software License 1.0`;
     case "None":
       return "";
     default:
@@ -80,8 +80,18 @@ function generateMarkdown({
 ## Description
 
 ${description}
-  
-## Install Instructions
+
+## Table of Contents
+
+1. [Description](#description)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [License](#license)
+5. [Contributing](#contributing)
+6. [Tests](#tests)
+7. [Questions](#questions)
+
+## Installation
 
 ${install}
   
@@ -89,23 +99,24 @@ ${install}
 
 ${usage}
   
-## Contributors
+${renderLicenseSection(lic)}
+
+${renderLicenseLink(lic)}
+
+## Contributing
 
 ${contribution}
   
 ## Tests
 
 ${tests}
-  
-${renderLicenseSection(lic)}
 
-${renderLicenseLink(lic)}
 
-## Contact for Questions
+## Questions
 
-${username}
+https://github.com/${username}
 
-${email}`;
+If you have any questions, please feel free to contact me at ${email}`;
 }
 
 module.exports = generateMarkdown;
