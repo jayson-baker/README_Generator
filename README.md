@@ -1,8 +1,8 @@
-# Test ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+# README Auto Generator
 
 ## Description
 
-Test
+Generates a README.md based on user inputs.
 
 ## Table of Contents
 
@@ -16,28 +16,22 @@ Test
 
 ## Installation
 
-Test
+Clone code from GitHub and run the index.js file in terminal using 'node index.js'.
 
 ## Usage
 
-Test
-
-## License
-
-This application is covered under The MIT License
-
-https://opensource.org/license/mit/
+This aplication will take in user input and generate a professional README. Streamlines the construction of README files!
 
 ## Contributing
 
-Test
+Jayson Baker, Xandromus (source code), gachoi06 (source code)
 
 ## Tests
 
-Test
+No tests have been made for this application as of yet.
 
 ## Questions
 
-https://github.com/Test
+https://github.com/jayson-baker
 
-If you have any questions, please feel free to contact me at Test
+If you have any questions, please feel free to contact me at bakej07@gmail.com
